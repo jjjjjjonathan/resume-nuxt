@@ -1,78 +1,82 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
+    "name": "Jonathan cheng",
+    "label": "Full-Stack Developer",
     "image": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
+    "email": "jonathanmchneg@gmail.com",
+    "phone": "",
+    "url": "https://jcheng.ca",
+    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. Through my experience I noticed a need for better functional programs within the sports-media landscape in Canada. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality. I love creating products that are easy to use and accessible to all walks of life.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "ON"
     },
-    "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "https://twitter.com/john"
-    }]
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "JJJJJJONATHAN",
+        "url": "https://www.github.com/jjjjjjonathan"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jonathanmcheng",
+        "url": "https://www.linkedin.com/in/jonathanmcheng/"
+      }
+    ]
   },
-  "work": [{
-    "name": "Company",
-    "position": "President",
-    "url": "https://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Started the company"
-    ]
-  }],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "url": "https://institution.com/",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "work": [
+    {
+      "name": "League1 Ontario",
+      "position": "Match-day Operations Coordinator",
+      "url": "",
+      "startDate": "2018-04-01",
+      "endDate": "",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Independent",
+      "position": "Freelance Writer/Photographer",
+      "url": "",
+      "startDate": "2018-01-01",
+      "endDate": "2022-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lighthouse Labs",
+      "url": "",
+      "area": "Full-Stack Web Development",
+      "studyType": "Diploma",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01"
+    },
+    {
+      "institution": "The University of Western Ontario",
+      "url": "",
+      "area": "Double Major in Criminology and Sociology\nCertificate in Writing",
+      "studyType": "BA",
+      "startDate": "2009-01-01",
+      "endDate": "2015-01-01"
+    },
+    {
+      "institution": "Fanshawe College",
+      "url": "",
+      "area": "Emergency Telecommunications",
+      "studyType": "Certificate",
+      "startDate": "2014-09-01",
+      "endDate": "2014-12-01"
+    }
+  ],
   "skills": [{
     "name": "Web Development",
     "level": "Master",
@@ -81,21 +85,6 @@
       "CSS",
       "JavaScript"
     ]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
   }],
   "projects": [{
     "name": "Project",
