@@ -1,6 +1,10 @@
 <template>
   <div>
     <!-- <NuxtWelcome /> -->
-    <h1 class="text-red-500">resume-nuxt</h1>
+    <Basics :name="basics.name" :label="basics.label" :workplace1name="work[0].name" />
   </div>
 </template>
+
+<script setup>
+  import { basics, work } from './assets/resume.json'
+</script>
