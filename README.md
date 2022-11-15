@@ -1,4 +1,9 @@
-# Nuxt 3 Minimal Starter
+# resume-nuxt
+
+## to-do
+
+- update README
+- responsive design
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
