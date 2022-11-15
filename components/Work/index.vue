@@ -5,13 +5,20 @@
     <div class="flex flex-row justify-between items-center">
       <h4 class="text-md font-semibold">{{ job.position }}
       </h4>
-      <span class="font-medium text-sm">{{ job.startDate }} - {{ job.endDate }}</span>
+      <span class="font-medium text-sm">{{ job.startDate }}–{{ job.endDate }}</span>
     </div>
     <p class="text-sm italic">{{ job.name }}</p>
-    <p class="text-sm px-1">{{ job.summary }}</p>
+    <p class="text-sm px-1 pt-1 pb-2">{{ job.summary }}</p>
     <ul>
-      <li class="text-sm" v-for="highlight in job.highlights">
-        {{ highlight }}
+      <li class="flex ml-2 mb-1 flex-row justify-start items-center" v-for="highlight in job.highlights">
+
+        <Icon name="fa6-solid:circle-check" class="text-emerald-600 mr-2" />
+        <div>
+          <p class="text-sm font-semibold my-auto">{{ highlight }}</p>
+        </div>
+
+
+
       </li>
     </ul>
 

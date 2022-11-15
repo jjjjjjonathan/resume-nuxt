@@ -4,7 +4,7 @@
     <div class="flex flex-row justify-between items-center">
       <h4 class="text-md font-semibold">{{ school.institution }}
       </h4>
-      <span class="font-medium text-sm">{{ school.startDate }} - {{ school.endDate }}</span>
+      <span class="font-medium text-sm">{{ school.date }}</span>
     </div>
     <div class="px-1">
       <p class="text-sm italic">{{ school.studyType }}</p>
