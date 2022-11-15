@@ -36,9 +36,9 @@ jobs:
     working_directory: ~/resume-nuxt
 
     steps:
-      # - add_ssh_keys:
-      #   fingerprints:
-      #     - '47:0f:a8:3d:97:80:cf:80:8b:45:37:31:88:d5:50:ff'
+      - add_ssh_keys:
+          fingerprints:
+            - '47:0f:a8:3d:97:80:cf:80:8b:45:37:31:88:d5:50:ff'
       - checkout
       - run: git push git@github.com:jjjjjjonathan/resume-nuxt.git main:production
 # Invoke jobs via workflows
