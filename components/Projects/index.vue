@@ -7,7 +7,7 @@
       <span class="font-medium text-sm">{{ project.date }}</span>
     </div>
 
-    <p class="text-sm px-1">{{ project.description }}</p>
+    <p class="text-sm px-1 pb-0.5">{{ project.description }}</p>
 
     <div class="flex flex-row flex-wrap justify-start items-center">
       <Tag v-for="tag in project.keywords" :tagPhrase="tag" />

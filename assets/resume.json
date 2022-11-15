@@ -6,7 +6,7 @@
     "email": "jonathanmcheng@gmail.com",
     "phone": "",
     "url": "https://jcheng.ca",
-    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality.",
+    "summary": "Dynamic developer transitioning from a background in social media and journalism. I want to create robust apps and platforms with accessibility in mind. I build with the intent to solve problems and create exceptional user experiences.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -48,7 +48,7 @@
       "endDate": "2022-01-01",
       "summary": "Captured compelling storylines into words and photos while managing multiple media projects and meeting time-sensitive deadlines in high-pressure environments.",
       "highlights": [
-        "Published feature stories of athletes on multiple platforms",
+        "Published stories of athletes on multiple platforms",
         "Won Centennial's CLIX photography competition in 2017"
       ]
     }
@@ -120,10 +120,49 @@
   ],
   "projects": [
     {
+      "name": "resume-nuxt",
+      "description": "Resume generator using Nuxt 3 to deploy a static website for easy-to-print PDFs.",
+      "highlights": [],
+      "keywords": [
+        "TypeScript",
+        "Vue",
+        "TailwindCSS",
+        "Vitest",
+        "CircleCI"
+      ],
+      "startDate": "2022-11-01",
+      "endDate": "2022-11-01",
+      "url": "https://github.com/jjjjjjonathan/resume-nuxt",
+      "roles": [],
+      "entity": "Entity",
+      "type": "application"
+    },
+    {
+      "name": "Scheduler",
+      "description": "Mock scheduler to make, update, and delete appointments in a provided week.",
+      "highlights": [],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Jest",
+        "WebSockets",
+        "CircleCI"
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-10-01",
+      "url": "https://github.com/jjjjjjonathan/scheduler",
+      "roles": [],
+      "entity": "Entity",
+      "type": "application"
+    },
+    {
       "name": "L1O-stats",
       "description": "Stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements.",
       "highlights": [],
       "keywords": [
+        "JavaScript",
         "React",
         "TailwindCSS",
         "Node.js",
@@ -134,44 +173,6 @@
       "startDate": "2022-04-01",
       "endDate": "2022-06-01",
       "url": "https://github.com/jjjjjjonathan/L1O-stats",
-      "roles": [],
-      "entity": "Entity",
-      "type": "application"
-    },
-    {
-      "name": "ez-league",
-      "description": "Sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur leagues.",
-      "highlights": [],
-      "keywords": [
-        "React",
-        "TailwindCSS",
-        "Node.js",
-        "PostgreSQL",
-        "Jest",
-        "Testing Library",
-        "WebSockets"
-      ],
-      "startDate": "2022-03-01",
-      "endDate": "2022-04-01",
-      "url": "https://github.com/jjjjjjonathan/ez-league",
-      "roles": [],
-      "entity": "Entity",
-      "type": "application"
-    },
-    {
-      "name": "Jungle",
-      "description": "Mini e-commerce application built on Ruby on Rails 4.2 that uses Stripe to process mock orders.",
-      "highlights": [],
-      "keywords": [
-        "Ruby On Rails",
-        "PostgreSQL",
-        "RSpec",
-        "Capybara",
-        "Poltergeist"
-      ],
-      "startDate": "2022-03-01",
-      "endDate": "2022-03-01",
-      "url": "https://github.com/jjjjjjonathan/ez-league",
       "roles": [],
       "entity": "Entity",
       "type": "application"
