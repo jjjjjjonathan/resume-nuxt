@@ -50,9 +50,9 @@ workflows:
           filters:
             branches:
               ignore: production
-      # - deploy:
-      #     filters:
-      #       branches:
-      #         ignore: production
-      #     requires:
-      #       - build
+      - deploy:
+          filters:
+            branches:
+              ignore: production
+          requires:
+            - build
