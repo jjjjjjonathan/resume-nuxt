@@ -4,4 +4,6 @@
 
 body {
   @apply bg-slate-300;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
