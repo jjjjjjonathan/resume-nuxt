@@ -6,7 +6,7 @@
     "email": "jonathanmcheng@gmail.com",
     "phone": "",
     "url": "https://jcheng.ca",
-    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality. I love creating products that are easy to use and accessible to all walks of life.",
+    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -115,12 +115,12 @@
   "projects": [
     {
       "name": "L1O-stats",
-      "description": "A stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements",
+      "description": "Stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements.",
       "highlights": [],
       "keywords": [
         "React",
         "TailwindCSS",
-        "Express",
+        "Node.js",
         "PostgreSQL",
         "Jest",
         "Testing Library"
@@ -134,12 +134,12 @@
     },
     {
       "name": "ez-league",
-      "description": "A sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur organizations",
+      "description": "Sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur leagues.",
       "highlights": [],
       "keywords": [
         "React",
         "TailwindCSS",
-        "Express",
+        "Node.js",
         "PostgreSQL",
         "Jest",
         "Testing Library",
@@ -154,7 +154,7 @@
     },
     {
       "name": "Jungle",
-      "description": "A mini e-commerce application built on Ruby on Rails 4.2 that uses Stripe to process mock orders",
+      "description": "Mini e-commerce application built on Ruby on Rails 4.2 that uses Stripe to process mock orders.",
       "highlights": [],
       "keywords": [
         "Ruby On Rails",

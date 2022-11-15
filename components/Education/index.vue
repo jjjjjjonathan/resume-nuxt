@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2" v-for="school in education">
+  <div class="px-2 py-1" v-for="school in education">
 
     <div class="flex flex-row justify-between items-center">
       <h4 class="text-md font-semibold">{{ school.institution }}

@@ -1,8 +1,12 @@
 <template>
-  <div class="p-2" v-for="section in skillSections">
+  <div class="px-2 py-1" v-for="section in skillSections">
 
     <h4 class="text-md font-semibold">{{ section.name }}</h4>
-    <p class="text-sm font-medium">{{ section.keywords.join(', ') }}</p>
+
+    <div class="flex flex-row flex-wrap justify-start items-center">
+      <Tag v-for="tag of section.keywords" :tagPhrase="tag" />
+
+    </div>
   </div>
 </template>
 
