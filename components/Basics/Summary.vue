@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-  import { getBasics } from './Basics/helpers';
+  import { getBasics } from '../Basics/helpers';
   const SUMMARY = 'summary'
   const summary = getBasics(SUMMARY)
 </script>
