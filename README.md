@@ -4,6 +4,7 @@
 
 - update README
 - responsive design
+- rename app to something cooler
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
