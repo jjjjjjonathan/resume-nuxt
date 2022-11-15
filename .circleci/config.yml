@@ -15,12 +15,44 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: 'Say hello'
+          command: 'echo Hello, World!'
 
+  build:
+    docker:
+      - image: cimg/node:16.14.2
+
+    working_directory: ~/resume-nuxt
+
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+
+  deploy:
+    machine:
+      enabled: true
+
+    working_directory: ~/resume-nuxt
+
+    steps:
+      - add_ssh_keys:
+        fingerprints:
+          - '47:0f:a8:3d:97:80:cf:80:8b:45:37:31:88:d5:50:ff'
+      - checkout
+      - run: git push git@github.com:jjjjjjonathan/resume-nuxt.git main:production
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  test_and_deploy:
     jobs:
-      - say-hello
+      - build:
+          filters:
+            branches:
+              ignore: production
+      - deploy:
+          filters:
+            branches:
+              ignore: production
+          requires:
+            - build
