@@ -110,12 +110,12 @@
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Jest", "Testing Library", "Storybook", "Cypress", "Mocha", "Chai"]
+      "keywords": ["Jest", "Testing Library", "Vitest",  "Storybook", "Cypress"]
     },
     {
       "name": "Concepts",
       "level": "",
-      "keywords": ["Test-driven development", "Rest APIs", "Object-oriented programming", "Communication"]
+      "keywords": ["Test-driven development", "Rest APIs", "Object-oriented programming", "Communication", "WebSockets", "Continuous Integration/Deployment"]
     }
   ],
   "projects": [

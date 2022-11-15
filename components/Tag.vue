@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-emerald-200 m-1 p-1 rounded-lg">
+  <div class="bg-emerald-200 m-0.5 p-1 rounded-lg">
     <p class="text-xs">{{ tagPhrase }}</p>
   </div>
 
