@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row justify-between text-sm items-center px-2">
 
-    <a :href="`mailto:${email}`">
+    <a :href="`mailto:${email}`" rel="noopener noreferrer" target="_blank">
       <Icon name="fa6-solid:envelope" /> {{ email }}
     </a>
 
@@ -9,7 +9,7 @@
       <Icon name="fa6-solid:phone" /> {{ phone }}
     </p>
 
-    <a :href="url">
+    <a :href="url" rel="noopener noreferrer" target="_blank">
       <Icon name="fa6-solid:globe" /> {{ display }}
     </a>
 
@@ -18,7 +18,7 @@
     </p>
 
     <span v-for="profile in profiles">
-      <a :href="profile.url">
+      <a :href="profile.url" rel="noopener noreferrer" target="_blank">
         <Icon v-if="profile.network === 'GitHub'" name="fa6-brands:github" />
         <Icon v-if="profile.network === 'LinkedIn'" name="fa6-brands:linkedin" />
         {{ profile.username }}

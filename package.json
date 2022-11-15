@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npx nuxi generate .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test": "vitest --run --reporter verbose --globals",
