@@ -1,29 +1,30 @@
 import { basics } from '../../assets/resume.json';
 
-export const getBasicsInfo = (property: string): string | object => {
-  return basics[property as keyof typeof basics];
-};
+const reducers = {
 
-export const getHeaderLinks = (property: string): string | object | undefined => {
-  if (property === 'email') return basics[property];
-  if (property === 'url') {
+  'url'(): object {
     return {
-      url: basics[property],
-      display: basics[property].split('//')[1]
-    };
-  }
-  if (property === 'location') {
-    return `${basics[property].city}, ${basics[property].region}`;
-  }
-};
+      url: basics.url,
+      display: basics.url.split('//')[1]
+    }
+  },
 
-export const getProfiles = (): object => {
-  return basics.profiles.map((profile) => ({
-    ...profile,
-    network: `${profile.network} icon`
-  }));
-};
+  'location'(): string {
+    return `${basics.location.city}, ${basics.location.region}`;
+  },
 
-export const getSummary = (): string => {
-  return basics.summary;
-};
+  'profiles'(): object {
+    return basics.profiles.map((profile) => ({
+      ...profile,
+      network: `${profile.network} icon`
+    }));
+  },
+
+  'default'(property: string): string | object {
+    return basics[property as keyof typeof basics];
+  }
+}
+
+export const getBasics = (property: string): string | object => {
+  return (reducers[property as keyof typeof reducers] || reducers.default)(property);
+}

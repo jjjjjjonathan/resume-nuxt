@@ -17,7 +17,7 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "JJJJJJONATHAN",
+        "username": "jjjjjjonathan",
         "url": "https://www.github.com/jjjjjjonathan"
       },
       {
@@ -86,22 +86,72 @@
       "JavaScript"
     ]
   }],
-  "projects": [{
-    "name": "Project",
-    "description": "Description…",
+  "projects": [
+    {
+    "name": "L1O-stats",
+    "description": "A stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements",
     "highlights": [
-      "Won award at AIHacks 2016"
+
     ],
     "keywords": [
-      "HTML"
+      "React",
+      "TailwindCSS",
+      "Express",
+      "PostgreSQL",
+      "Jest/Testing Library"
     ],
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "url": "https://project.com/",
+    "startDate": "2022-04-01",
+    "endDate": "2022-06-01",
+    "url": "https://github.com/jjjjjjonathan/L1O-stats",
     "roles": [
-      "Team Lead"
+
     ],
     "entity": "Entity",
     "type": "application"
-  }]
+    },
+    {
+      "name": "ez-league",
+      "description": "A sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur organizations",
+      "highlights": [
+  
+      ],
+      "keywords": [
+        "React",
+        "TailwindCSS",
+        "Express",
+        "PostgreSQL",
+        "Jest/Testing Library"
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-04-01",
+      "url": "https://github.com/jjjjjjonathan/ez-league",
+      "roles": [
+  
+      ],
+      "entity": "Entity",
+      "type": "application"
+    },
+    {
+      "name": "Jungle",
+      "description": "A mini e-commerce application built on Ruby on Rails 4.2 that uses Stripe to process mock orders",
+      "highlights": [
+  
+      ],
+      "keywords": [
+        "Ruby On Rails",
+        "PostgreSQL",
+        "RSpec",
+        "Capybara",
+        "Poltergeist"
+      ],
+      "startDate": "2022-03-01",
+      "endDate": "2022-03-01",
+      "url": "https://github.com/jjjjjjonathan/ez-league",
+      "roles": [
+  
+      ],
+      "entity": "Entity",
+      "type": "application"
+    }
+  ]
 }

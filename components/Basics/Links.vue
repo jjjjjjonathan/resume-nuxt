@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row justify-between">
+  <div class="flex flex-row justify-between text-sm">
     <p>{{email}}</p>
-    <a :href="url.url">{{url.display}}</a>
+    <a :href="url">{{display}}</a>
 
     <p>{{location}}</p>
 
@@ -12,14 +12,15 @@
 </template>
 
 <script setup>
-  import { getHeaderLinks, getProfiles } from '../Basics/helpers'
+  import { getBasics } from './helpers'
 
   const EMAIL = 'email';
   const URL = 'url';
   const LOCATION = 'location'
+  const PROFILES = 'profiles'
 
-  const email = getHeaderLinks(EMAIL);
-  const url = getHeaderLinks(URL)
-  const location = getHeaderLinks(LOCATION)
-  const profiles = getProfiles();
+  const email = getBasics(EMAIL);
+  const { url, display } = getBasics(URL)
+  const location = getBasics(LOCATION)
+  const profiles = getBasics(PROFILES);
 </script>
