@@ -35,9 +35,7 @@
       "startDate": "2018-04-01",
       "endDate": "",
       "summary": "Description…",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     },
     {
       "name": "Independent",
@@ -46,9 +44,7 @@
       "startDate": "2018-01-01",
       "endDate": "2022-01-01",
       "summary": "Description…",
-      "highlights": [
-        "Started the company"
-      ]
+      "highlights": ["Started the company"]
     }
   ],
   "education": [
@@ -77,66 +73,57 @@
       "endDate": "2014-12-01"
     }
   ],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  }],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
   "projects": [
     {
-    "name": "L1O-stats",
-    "description": "A stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements",
-    "highlights": [
-
-    ],
-    "keywords": [
-      "React",
-      "TailwindCSS",
-      "Express",
-      "PostgreSQL",
-      "Jest/Testing Library"
-    ],
-    "startDate": "2022-04-01",
-    "endDate": "2022-06-01",
-    "url": "https://github.com/jjjjjjonathan/L1O-stats",
-    "roles": [
-
-    ],
-    "entity": "Entity",
-    "type": "application"
-    },
-    {
-      "name": "ez-league",
-      "description": "A sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur organizations",
-      "highlights": [
-  
-      ],
+      "name": "L1O-stats",
+      "description": "A stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements",
+      "highlights": [],
       "keywords": [
         "React",
         "TailwindCSS",
         "Express",
         "PostgreSQL",
-        "Jest/Testing Library"
+        "Jest",
+        "Testing Library"
+      ],
+      "startDate": "2022-04-01",
+      "endDate": "2022-06-01",
+      "url": "https://github.com/jjjjjjonathan/L1O-stats",
+      "roles": [],
+      "entity": "Entity",
+      "type": "application"
+    },
+    {
+      "name": "ez-league",
+      "description": "A sports-league generator with real-time stats tracking and schedules, recreating a professional feel for amateur organizations",
+      "highlights": [],
+      "keywords": [
+        "React",
+        "TailwindCSS",
+        "Express",
+        "PostgreSQL",
+        "Jest",
+        "Testing Library",
+        "WebSockets"
       ],
       "startDate": "2022-03-01",
       "endDate": "2022-04-01",
       "url": "https://github.com/jjjjjjonathan/ez-league",
-      "roles": [
-  
-      ],
+      "roles": [],
       "entity": "Entity",
       "type": "application"
     },
     {
       "name": "Jungle",
       "description": "A mini e-commerce application built on Ruby on Rails 4.2 that uses Stripe to process mock orders",
-      "highlights": [
-  
-      ],
+      "highlights": [],
       "keywords": [
         "Ruby On Rails",
         "PostgreSQL",
@@ -147,9 +134,7 @@
       "startDate": "2022-03-01",
       "endDate": "2022-03-01",
       "url": "https://github.com/jjjjjjonathan/ez-league",
-      "roles": [
-  
-      ],
+      "roles": [],
       "entity": "Entity",
       "type": "application"
     }

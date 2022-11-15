@@ -3,6 +3,7 @@
     <div class="col-span-6">
       <section class="px-4">
         <ContentHeading :title="'projects'" :full="true" />
+        <Projects />
       </section>
       <section class="px-4">
         <ContentHeading :title="'work'" :full="true" />
@@ -11,6 +12,7 @@
     <div class="col-span-5">
       <section class="px-4">
         <ContentHeading :title="'skills'" :full="true" />
+        <p class="text-md font-medium">i will put skills here</p>
       </section>
       <section class="px-4">
         <ContentHeading :title="'education'" :full="true" />
