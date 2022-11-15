@@ -5,6 +5,10 @@
       <Icon name="fa6-solid:envelope" /> {{ email }}
     </a>
 
+    <p v-if="phone">
+      <Icon name="fa6-solid:phone" /> {{ phone }}
+    </p>
+
     <a :href="url">
       <Icon name="fa6-solid:globe" /> {{ display }}
     </a>
@@ -30,9 +34,11 @@ const EMAIL = 'email';
 const URL = 'url';
 const LOCATION = 'location';
 const PROFILES = 'profiles';
+const PHONE = 'phone';
 
 const email = getBasics(EMAIL);
 const { url, display } = getBasics(URL);
 const location = getBasics(LOCATION);
 const profiles = getBasics(PROFILES);
+const phone = getBasics(PHONE);
 </script>

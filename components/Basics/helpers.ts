@@ -1,4 +1,4 @@
-import { basics } from '../../assets/resume.json';
+import { basics } from '../../assets/resume.private.json';
 
 const reducers = {
   url(): object {
