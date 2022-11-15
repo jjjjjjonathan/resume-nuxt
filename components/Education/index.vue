@@ -1,0 +1,26 @@
+<template>
+  <div class="p-2" v-for="school in education">
+
+    <div class="flex flex-row justify-between items-center">
+      <h4 class="text-md font-semibold">{{ school.institution }}
+      </h4>
+      <span class="font-medium text-sm">{{ school.startDate }} - {{ school.endDate }}</span>
+    </div>
+    <div class="px-1">
+      <p class="text-sm italic">{{ school.studyType }}</p>
+      <p class="text-sm">{{ school.area }}</p>
+      <p class="text-xs font-light" v-if="school.note">{{ school.note }}</p>
+    </div>
+
+
+
+  </div>
+</template>
+
+<script setup>
+
+import { getEducation } from './helpers';
+
+const education = getEducation();
+
+</script>

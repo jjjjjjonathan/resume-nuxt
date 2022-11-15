@@ -7,15 +7,17 @@
       </section>
       <section class="px-4">
         <ContentHeading :title="'work'" />
+        <Work />
       </section>
     </div>
     <div class="col-span-5 h-full flex flex-col">
       <section class="px-4">
         <ContentHeading :title="'skills'" />
-        <p class="text-md font-medium">i will put skills here</p>
+        <Skills />
       </section>
       <section class="px-4">
         <ContentHeading :title="'education'" />
+        <Education />
       </section>
     </div>
   </div>

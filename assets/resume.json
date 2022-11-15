@@ -6,7 +6,7 @@
     "email": "jonathanmcheng@gmail.com",
     "phone": "",
     "url": "https://jcheng.ca",
-    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. Through my experience I noticed a need for better functional programs within the sports-media landscape in Canada. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality. I love creating products that are easy to use and accessible to all walks of life.",
+    "summary": "Dynamic web developer transitioning from a background in social media  and journalism within the sports industry. I wanted to build platforms that are robust and easy to use for consumers. With this passion, I completed my Full Stack Web Development Diploma where I was able to learn fundamentals to bring my vision into reality. I love creating products that are easy to use and accessible to all walks of life.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -34,17 +34,17 @@
       "url": "",
       "startDate": "2018-04-01",
       "endDate": "",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "summary": "Longer description of my job just to kill some space for now as I should fill a sentence or two. This is probably enough.",
+      "highlights": ["Started the company", " did a second thing", "did a third thing"]
     },
     {
       "name": "Independent",
       "position": "Freelance Writer/Photographer",
       "url": "",
-      "startDate": "2018-01-01",
+      "startDate": "2017-01-01",
       "endDate": "2022-01-01",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "summary": "Longer description of my job just to kill some space for now as I should fill a sentence or two. This is probably enough.",
+      "highlights": ["Started the company", "did a fourth thing", "did a fifth thing", "did a sixth thing"]
     }
   ],
   "education": [
@@ -53,31 +53,63 @@
       "url": "",
       "area": "Full-Stack Web Development",
       "studyType": "Diploma",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01"
+      "startDate": "2022-01-01",
+      "endDate": "2022-04-01",
+      "note": ""
     },
     {
-      "institution": "The University of Western Ontario",
+      "institution": "Centennial College",
+      "url": "",
+      "area": "Sports Journalism",
+      "studyType": "Post Graduate Certificate",
+      "startDate": "2017-01-01",
+      "endDate": "2017-07-01",
+      "note": "Completed 2/3 semesters"
+    },
+    {
+      "institution": "Western University",
       "url": "",
       "area": "Double Major in Criminology and Sociology\nCertificate in Writing",
-      "studyType": "Bachelor's",
+      "studyType": "Bachelor of Arts",
       "startDate": "2009-01-01",
-      "endDate": "2015-01-01"
+      "endDate": "2015-01-01",
+      "note": ""
     },
     {
       "institution": "Fanshawe College",
       "url": "",
       "area": "Emergency Telecommunications",
-      "studyType": "Certificate",
+      "studyType": "Ontario College Certificate",
       "startDate": "2014-09-01",
-      "endDate": "2014-12-01"
+      "endDate": "2014-12-01",
+      "note": ""
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["JavaScript", "TypeScript", "HTML/CSS", "SQL", "Ruby", "C#"]
+    },
+    {
+      "name": "Frameworks/Libraries",
+      "level": "",
+      "keywords": ["React", "Vue", "Node.js", "Ruby on Rails", "TailwindCSS"]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": ["PostgreSQL", "MySQL"]
+    },
+    {
+      "name": "Testing",
+      "level": "",
+      "keywords": ["Jest", "Testing Library", "Storybook", "Cypress", "Mocha", "Chai"]
+    },
+    {
+      "name": "Concepts",
+      "level": "",
+      "keywords": ["Test-driven development", "Rest APIs", "Object-oriented programming", "Communication"]
     }
   ],
   "projects": [
