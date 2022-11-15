@@ -4,4 +4,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
   },
+  app: {
+    head: {
+      title: 'Jonathan Cheng - Resume',
+    },
+  },
 });
