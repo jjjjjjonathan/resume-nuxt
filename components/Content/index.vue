@@ -1,24 +1,26 @@
 <template>
-  <div class="grid grid-cols-11 justify-center w-full items-center">
-    <div class="col-span-6 h-full flex flex-col">
-      <section class="px-4">
-        <ContentHeading :title="'projects'" />
-        <Projects />
-      </section>
-      <section class="px-4">
-        <ContentHeading :title="'work'" />
-        <Work />
-      </section>
-    </div>
-    <div class="col-span-5 h-full flex flex-col">
-      <section class="px-4">
-        <ContentHeading :title="'skills'" />
-        <Skills />
-      </section>
-      <section class="px-4">
-        <ContentHeading :title="'education'" />
-        <Education />
-      </section>
-    </div>
+  <div class="grid grid-cols-11 justify-center w-full h-full items-center mb-5 letter:mb-0">
+    <BasicsSummary />
+
+    <section class="px-4 col-span-11 medium:col-span-6 order-2 medium:order-1 h-full">
+      <ContentHeading :title="'projects'" />
+      <Projects />
+    </section>
+
+    <section class="px-4 col-span-11 medium:col-span-5 order-1 medium:order-2 h-full">
+      <ContentHeading :title="'skills'" />
+      <Skills />
+    </section>
+
+    <section class="px-4 col-span-11 medium:col-span-6 order-3 h-full">
+      <ContentHeading :title="'work'" />
+      <Work />
+    </section>
+
+    <section class="px-4 col-span-11 medium:col-span-5 order-4 h-full">
+      <ContentHeading :title="'education'" />
+      <Education />
+    </section>
+
   </div>
 </template>

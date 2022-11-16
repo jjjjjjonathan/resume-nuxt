@@ -1,10 +1,16 @@
 # resume-nuxt
 
+\*\* Visit https://resume.jcheng.ca to see my resume.
+
 ## to-do
 
 - [ ] update README
-- [ ] responsive design
+- [x] responsive design
 - [ ] rename app to something cooler
+
+Everything below is default Nuxt README stuff and will be edited soon.
+
+---
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
