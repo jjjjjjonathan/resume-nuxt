@@ -1,6 +1,7 @@
 <template>
   <header id="basics" class="flex flex-col small:flex-row medium:flex-col bg-emerald-400 w-full p-4 justify-between">
-    <div class="flex flex-col medium:flex-row justify-between items-center small:items-start medium:items-end">
+    <div
+      class="flex flex-col medium:flex-row justify-between items-center small:items-start medium:items-end print:flex-row print:items-end">
       <h1 class="text-5xl font-semibold text-center xs:text-right">{{ name.toUpperCase() }}</h1>
       <h2 class="text-3xl font-semibold text-center xs:text-right">{{ label.toUpperCase() }}</h2>
     </div>
