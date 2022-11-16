@@ -6,7 +6,7 @@
     "email": "jonathanmcheng@gmail.com",
     "phone": "",
     "url": "https://jcheng.ca",
-    "summary": "Dynamic developer transitioning from a background in social media and journalism. I want to create robust apps and platforms with accessibility in mind. I build with the intent to solve problems and create exceptional user experiences.",
+    "summary": "Dynamic developer with a keen eye for details transitioning from a background in social media and journalism. I want to create apps with robust back ends and accessible front-end platforms. I build with the intent to solve problems and deliver thoughtful user experiences with diverse groups of people in mind.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -115,7 +115,7 @@
     {
       "name": "Concepts",
       "level": "",
-      "keywords": ["Test-driven development", "Rest APIs", "Object-oriented programming", "Communication", "WebSockets", "Continuous Integration/Deployment"]
+      "keywords": ["Test-driven development", "REST APIs", "Object-oriented programming", "Database Design", "WebSockets", "Continuous Integration/Deployment"]
     }
   ],
   "projects": [
