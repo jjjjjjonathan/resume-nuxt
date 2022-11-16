@@ -1,7 +1,7 @@
 <template>
-  <section class="flex flex-col px-4 col-span-11 order-0">
-    <ContentHeading :title="SUMMARY" :full="true" />
-    <p class="text-sm px-4 py-2">{{ summary }}</p>
+  <section class="flex flex-col justify-start px-4 col-span-11 order-0 h-full letter:-mb-3">
+    <ContentHeading :title="SUMMARY" />
+    <p class="text-sm px-4 pt-2">{{ summary }}</p>
   </section>
 </template>
 

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       theme: {
         screens: {
           letter: '817px',
-          medium: '804px',
+          medium: '808px',
           small: '670px',
           xs: '460px',
         },
