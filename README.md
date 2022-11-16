@@ -1,6 +1,6 @@
 # resume-nuxt
 
-\*\* Visit https://resume.jcheng.ca to see my resume.
+**Visit https://resume.jcheng.ca to see my resume**.
 
 ## to-do
 
