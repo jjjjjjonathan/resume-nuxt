@@ -14,7 +14,7 @@
 
         <Icon name="fa6-solid:circle-check" class="text-emerald-600 mr-2" />
         <div>
-          <p class="text-sm font-semibold my-auto">{{ highlight }}</p>
+          <p class="text-sm font-medium my-auto">{{ highlight }}</p>
         </div>
 
 
