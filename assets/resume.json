@@ -34,7 +34,7 @@
       "url": "",
       "startDate": "2018-04-01",
       "endDate": "",
-      "summary": "Coordinate efficient setup of operations at soccer matches, and communicating with teams and officials to ensure league rules are followed to facilitate a smooth match-day experience.",
+      "summary": "Coordinate efficient setup of operations at soccer matches, and communicating with teams and officials to follow league rules and facilitate a smooth match-day experience.",
       "highlights": [
         "Directed social media team in events for 20,000 followers",
         "Oversaw operations of 92 matches in three seasons"
@@ -121,7 +121,7 @@
   "projects": [
     {
       "name": "resume-nuxt",
-      "description": "Resume generator using Nuxt 3 to deploy a static website for easy-to-print PDFs.",
+      "description": "Resume generator using Nuxt 3 to deploy to a static site.",
       "highlights": [],
       "keywords": [
         "TypeScript",
