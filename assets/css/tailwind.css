@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-300;
+  @apply bg-white letter:bg-slate-300;
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
 }
