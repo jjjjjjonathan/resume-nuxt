@@ -19,6 +19,9 @@ export default defineNuxtConfig({
       title: 'Resume | Jonathan Cheng',
       charset: 'utf-8',
       meta: [{ name: 'description', content: 'Resume of Jonathan Cheng' }],
+      htmlAttrs: {
+        lang: 'en',
+      },
     },
   },
 });
