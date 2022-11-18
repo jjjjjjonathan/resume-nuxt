@@ -3,9 +3,9 @@
   <div class="px-2 py-1" v-for="job in work">
 
     <div class="flex flex-row justify-between items-center">
-      <h4 class="text-md font-semibold">{{ job.position }}
+      <h4 class="text-md font-semibold text-left">{{ job.position }}
       </h4>
-      <span class="font-medium text-sm">{{ job.startDate }}–{{ job.endDate }}</span>
+      <span class="font-medium text-sm text-right">{{ job.startDate }}–{{ job.endDate }}</span>
     </div>
     <p class="text-sm italic">{{ job.name }}</p>
     <p class="text-sm px-1 pt-1 pb-2">{{ job.summary }}</p>

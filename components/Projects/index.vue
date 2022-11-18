@@ -2,10 +2,11 @@
   <div v-for="project in projects" class="px-2 py-1">
 
     <div class="flex flex-row justify-between items-center">
-      <h4 class="text-md font-semibold"><a :href="project.url" rel="noopener noreferrer" target="_blank">{{ project.name
+      <h4 class="text-md font-semibold text-left"><a :href="project.url" rel="noopener noreferrer" target="_blank">{{
+          project.name
       }}</a>
       </h4>
-      <span class="font-medium text-sm">{{ project.date }}</span>
+      <span class="font-medium text-sm text-right">{{ project.date }}</span>
     </div>
 
     <p class="text-sm px-1 pb-0.5">{{ project.description }}</p>

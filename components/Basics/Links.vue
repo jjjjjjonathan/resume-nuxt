@@ -1,6 +1,9 @@
 <template>
   <div
-    class="flex flex-wrap flex-row small:flex-col medium:flex-row justify-center small:justify-between gap-x-4 small:gap-0 text-sm items-end medium:items-center print:items-center print:justify-between px-2">
+    class="
+          flex flex-wrap flex-row
+          small:flex-col medium:flex-row print:flex-row
+          justify-center small:justify-between gap-x-4 small:gap-0 text-sm items-end medium:items-center print:items-center print:justify-between px-2">
 
     <a :href="`mailto:${email}`" rel="noopener noreferrer" target="_blank">
       <div class="flex flex-row small:flex-row-reverse medium:flex-row items-center gap-0.5">

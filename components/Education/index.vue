@@ -2,9 +2,9 @@
   <div class="px-2 py-1" v-for="school in education">
 
     <div class="flex flex-row justify-between items-center">
-      <h4 class="text-md font-semibold">{{ school.institution }}
+      <h4 class="text-md font-semibold text-left">{{ school.institution }}
       </h4>
-      <span class="font-medium text-sm">{{ school.date }}</span>
+      <span class="font-medium text-sm text-right">{{ school.date }}</span>
     </div>
     <div class="px-1">
       <p class="text-sm italic">{{ school.studyType }}</p>
