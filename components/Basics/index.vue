@@ -15,10 +15,12 @@
         hover:bg-emerald-300
         shadow-md
         p-1
-        block print:hidden"><span class="inline medium:hidden large:inline">View
-          as
-        </span>
-        <Icon name="fa6-regular:file-pdf" /> PDF
+        block print:hidden"><a href="https://resume.jcheng.ca/Cheng_Jonathan-resume.pdf"><span
+            class="inline medium:hidden large:inline">View
+            as
+          </span>
+          <Icon name="fa6-regular:file-pdf" /> PDF
+        </a>
       </button>
       <h2 class="order-2 medium:order-3 text-xl xs:text-2xl font-semibold text-center xs:text-right">{{
           label.toUpperCase()

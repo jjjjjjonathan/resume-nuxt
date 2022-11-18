@@ -5,10 +5,11 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  @apply font-rubik print:font-sans
 }
 body {
-  @apply box-border bg-transparent letter:bg-slate-300 print:bg-transparent py-0 letter:py-10 print:py-0;
+  @apply box-border antialiased bg-transparent letter:bg-slate-300 print:bg-transparent py-0 letter:py-10 print:py-0;
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
 }

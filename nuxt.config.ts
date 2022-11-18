@@ -12,6 +12,10 @@ export default defineNuxtConfig({
           small: '600px',
           xs: '460px',
         },
+        fontFamily: {
+          rubik: ['Rubik', 'sans-serif'],
+          sans: ['ui-sans-serif', 'system-ui'],
+        },
       },
     },
   },
