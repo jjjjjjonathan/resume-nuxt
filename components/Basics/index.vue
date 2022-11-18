@@ -13,6 +13,7 @@
         my-auto
         rounded-lg bg-emerald-200
         hover:bg-emerald-300
+        shadow-md
         p-1
         block print:hidden"><span class="inline medium:hidden large:inline">View
           as
