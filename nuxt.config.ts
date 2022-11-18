@@ -17,6 +17,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Resume | Jonathan Cheng',
+      charset: 'utf-8',
+      meta: [{ name: 'description', content: 'Resume of Jonathan Cheng' }],
     },
   },
 });
