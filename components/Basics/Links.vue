@@ -8,7 +8,7 @@
     <a :href="`mailto:${email}`" rel="noopener noreferrer" target="_blank">
       <div class="flex flex-row small:flex-row-reverse medium:flex-row items-center gap-0.5">
         <Icon name="fa6-solid:envelope" />
-        <span>{{ email }}</span>
+        <span class="hover:underline">{{ email }}</span>
       </div>
 
     </a>
@@ -16,7 +16,7 @@
     <div v-if="phone">
       <div class="flex flex-row small:flex-row-reverse medium:flex-row items-center gap-0.5">
         <Icon name="fa6-solid:phone" />
-        <p>{{ phone }}</p>
+        <span>{{ phone }}</span>
       </div>
 
     </div>
@@ -24,7 +24,7 @@
     <a :href="url" rel="noopener noreferrer" target="_blank">
       <div class="flex flex-row small:flex-row-reverse medium:flex-row items-center gap-0.5">
         <Icon name="fa6-solid:globe" />
-        <span>{{ display }}</span>
+        <span class="hover:underline">{{ display }}</span>
       </div>
 
     </a>
@@ -43,7 +43,7 @@
 
           <Icon v-if="profile.network === 'GitHub'" name="fa6-brands:github" />
           <Icon v-if="profile.network === 'LinkedIn'" name="fa6-brands:linkedin" />
-          <span>{{ profile.username }}</span>
+          <span class="hover:underline">{{ profile.username }}</span>
         </div>
 
       </a>
