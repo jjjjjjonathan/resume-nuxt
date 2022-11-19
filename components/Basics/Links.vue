@@ -52,14 +52,6 @@
 </template>
 
 <script setup>
-import { getBasics } from './helpers';
-
-const EMAIL = 'email';
-const URL = 'url';
-const LOCATION = 'location';
-const PROFILES = 'profiles';
-const PHONE = 'phone';
-
 const email = getBasics(EMAIL);
 const { url, display } = getBasics(URL);
 const location = getBasics(LOCATION);

@@ -28,8 +28,6 @@
 
 <script setup>
 
-import { getWork } from './helpers';
-
 const work = getWork()
 
 </script>

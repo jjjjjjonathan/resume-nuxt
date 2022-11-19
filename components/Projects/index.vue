@@ -13,14 +13,12 @@
     <p class="text-sm px-1 pb-0.5">{{ project.description }}</p>
 
     <div class="flex flex-row flex-wrap justify-start items-center">
-      <Tag v-for="tag in project.keywords" :tagPhrase="tag" />
+      <UiTag v-for="tag in project.keywords" :tagPhrase="tag" />
     </div>
   </div>
 
 </template>
 
 <script setup>
-import { getProjects } from './helpers';
-
 const projects = getProjects();
 </script>

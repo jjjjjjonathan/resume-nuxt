@@ -3,22 +3,22 @@
     <BasicsSummary />
 
     <section class="px-4 col-span-11 medium:col-span-6 order-2 medium:order-1 h-full print:col-span-6 print:order-1">
-      <ContentHeading :title="'projects'" />
+      <UiSectionHeading :title="'projects'" />
       <Projects />
     </section>
 
     <section class="px-4 col-span-11 medium:col-span-5 order-1 medium:order-2 h-full print:col-span-5 print:order-2">
-      <ContentHeading :title="'skills'" />
+      <UiSectionHeading :title="'skills'" />
       <Skills />
     </section>
 
     <section class="px-4 col-span-11 medium:col-span-6 order-3 h-full print:col-span-6">
-      <ContentHeading :title="'experience'" />
+      <UiSectionHeading :title="'experience'" />
       <Work />
     </section>
 
     <section class="px-4 col-span-11 medium:col-span-5 order-4 h-full print:col-span-5">
-      <ContentHeading :title="'education'" />
+      <UiSectionHeading :title="'education'" />
       <Education />
     </section>
 
