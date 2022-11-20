@@ -1,5 +1,8 @@
 <template>
-  <Resume />
+  <div id="resume">
+    <Header />
+    <Content />
+  </div>
 </template>
 
 

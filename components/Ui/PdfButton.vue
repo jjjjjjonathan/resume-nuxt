@@ -1,6 +1,5 @@
 <template>
   <button class="
-        order-3 medium:order-2
         my-auto
         rounded-lg bg-emerald-200
         hover:bg-emerald-300
