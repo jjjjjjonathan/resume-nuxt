@@ -1,4 +1,4 @@
-import { work } from '../assets/resume.json';
+import { work } from './resume.json';
 import moment from 'moment';
 import { DEFAULT_DATE_FORMAT } from './constants';
 

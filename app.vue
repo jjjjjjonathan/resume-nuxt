@@ -1,7 +1,7 @@
 <template>
   <div id="resume">
     <Header />
-    <Content />
+    <NuxtPage />
   </div>
 </template>
 

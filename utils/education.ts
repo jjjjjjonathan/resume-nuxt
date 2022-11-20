@@ -1,4 +1,4 @@
-import { education } from '../assets/resume.json';
+import { education } from './resume.json';
 import moment from 'moment';
 import { EDUCATION_DATE_FORMAT } from './constants';
 
