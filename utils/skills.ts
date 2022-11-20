@@ -1,4 +1,4 @@
-import { skills } from '../../assets/resume.json';
+import { skills } from './resume.json';
 
 export const getSkills = (): object => {
   return skills.map((skillSection) => ({

@@ -1,0 +1,10 @@
+export const NAME = 'name';
+export const LABEL = 'label';
+export const EMAIL = 'email';
+export const URL = 'url';
+export const LOCATION = 'location';
+export const PROFILES = 'profiles';
+export const PHONE = 'phone';
+export const SUMMARY = 'summary';
+export const EDUCATION_DATE_FORMAT = 'YYYY';
+export const DEFAULT_DATE_FORMAT = 'MMM YYYY';

@@ -1,7 +1,6 @@
-import { projects } from '../../assets/resume.json';
+import { projects } from './resume.json';
 import moment from 'moment';
-
-const dateFormat = 'MMM YYYY';
+import { DEFAULT_DATE_FORMAT } from './constants';
 
 const formatDates = (startDate: string, endDate: string): string => {
   let date = startDate;
@@ -19,8 +18,10 @@ export const getProjects = (): object => {
     url: project.url,
     keywords: project.keywords,
     date: formatDates(
-      moment(project.startDate).format(dateFormat),
-      project.endDate ? moment(project.endDate).format(dateFormat) : 'Present'
+      moment(project.startDate).format(DEFAULT_DATE_FORMAT),
+      project.endDate
+        ? moment(project.endDate).format(DEFAULT_DATE_FORMAT)
+        : 'Present'
     ),
     startDate: moment(project.startDate).format('MMM YYYY'),
     endDate: project.endDate

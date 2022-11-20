@@ -1,7 +1,6 @@
-import { education } from '../../assets/resume.json';
+import { education } from './resume.json';
 import moment from 'moment';
-
-const dateFormat = 'YYYY';
+import { EDUCATION_DATE_FORMAT } from './constants';
 
 const formatSchoolYears = (startDate: string, endDate: string): string => {
   let date = startDate;
@@ -18,12 +17,14 @@ export const getEducation = (): object => {
     area: school.area,
     studyType: school.studyType,
     date: formatSchoolYears(
-      moment(school.startDate).format(dateFormat),
-      school.endDate ? moment(school.endDate).format(dateFormat) : 'Present'
+      moment(school.startDate).format(EDUCATION_DATE_FORMAT),
+      school.endDate
+        ? moment(school.endDate).format(EDUCATION_DATE_FORMAT)
+        : 'Present'
     ),
-    startDate: moment(school.startDate).format(dateFormat),
+    startDate: moment(school.startDate).format(EDUCATION_DATE_FORMAT),
     endDate: school.endDate
-      ? moment(school.endDate).format(dateFormat)
+      ? moment(school.endDate).format(EDUCATION_DATE_FORMAT)
       : 'Present',
     note: school.note || null,
   }));

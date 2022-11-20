@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         screens: {
           letter: '1367px',
           large: '777px',
-          medium: '715px',
+          medium: '716px',
           small: '600px',
           xs: '460px',
         },
@@ -28,5 +28,8 @@ export default defineNuxtConfig({
         lang: 'en',
       },
     },
+  },
+  imports: {
+    dirs: ['utils'],
   },
 });

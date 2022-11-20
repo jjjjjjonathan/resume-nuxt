@@ -19,8 +19,6 @@
 
 <script setup>
 
-import { getEducation } from './helpers';
-
 const education = getEducation();
 
 </script>

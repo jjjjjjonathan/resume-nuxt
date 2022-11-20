@@ -5,13 +5,55 @@
 @tailwind utilities;
 
 html {
-  /* font-family: 'Rubik', sans-serif; */
-  @apply font-rubik print:font-sans
+  @apply  font-rubik print:font-sans
 }
 body {
-  @apply box-border antialiased bg-transparent letter:bg-slate-300 print:bg-transparent py-0 letter:py-10 print:py-0;
+  @apply  box-border antialiased
+          bg-transparent letter:bg-slate-300 print:bg-transparent
+          py-0 letter:py-10 print:py-0;
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
+}
+
+header {
+  @apply  bg-emerald-400
+          w-full
+          flex flex-col small:flex-row medium:flex-col print:flex-col
+          justify-between
+          p-4
+}
+
+h1 {
+  @apply  text-3xl xs:text-4xl
+          font-semibold
+          text-center xs:text-right
+}
+
+h2 {
+  @apply  text-xl xs:text-2xl
+          font-semibold
+          text-center xs:text-right
+}
+
+.link {
+  @apply  flex flex-row small:flex-row-reverse medium:flex-row
+          items-center
+          gap-0.5
+}
+
+.link a {
+  @apply  hover:underline
+}
+
+div#resume {
+  @apply  w-full letter:w-[816px] print:w-[816px]
+          h-full letter:h-[1054px] print:h-[1054px]
+        bg-white
+          flex flex-col
+          justify-start
+          items-center
+          mx-auto
+          shadow-none letter:shadow-2xl print:shadow-none
 }
 
 @page {
