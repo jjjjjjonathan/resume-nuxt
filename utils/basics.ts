@@ -1,7 +1,14 @@
 import { basics } from './resume.json';
+import {
+  BasicsUrl,
+  BasicsLocation,
+  BasicsEmail,
+  BasicsPhone,
+  BasicsProfile,
+} from './interfaces';
 
 const reducers = {
-  url(): object {
+  url(): BasicsUrl {
     return {
       url: basics.url,
       urlDisplay: basics.url.split('//')[1],
@@ -9,14 +16,14 @@ const reducers = {
     };
   },
 
-  location(): object {
+  location(): BasicsLocation {
     return {
       location: `${basics.location.city}, ${basics.location.region}`,
       locationIcon: 'fa6-solid:location-dot',
     };
   },
 
-  email(): object {
+  email(): BasicsEmail {
     return {
       emailDisplay: basics.email,
       emailUrl: `mailto:${basics.email}`,
@@ -24,7 +31,7 @@ const reducers = {
     };
   },
 
-  phone(): object | null {
+  phone(): BasicsPhone | null {
     if (basics.phone.length < 1) {
       return null;
     } else {
@@ -35,7 +42,7 @@ const reducers = {
     }
   },
 
-  profiles(): object {
+  profiles(): BasicsProfile[] {
     return basics.profiles.map((profile) => ({
       profileUsername: profile.username,
       profileUrl: profile.url,
@@ -53,7 +60,17 @@ const reducers = {
   },
 };
 
-export const getBasics = (property: string): string | object | null => {
+export const getBasics = (
+  property: string
+):
+  | string
+  | object
+  | BasicsUrl
+  | BasicsLocation
+  | BasicsEmail
+  | BasicsPhone
+  | BasicsProfile
+  | null => {
   return (reducers[property as keyof typeof reducers] || reducers.default)(
     property
   );
