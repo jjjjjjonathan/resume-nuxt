@@ -1,15 +1,8 @@
 <template>
-  <div class="
-          flex flex-wrap flex-row small:flex-col medium:flex-row print:flex-row
-          justify-center small:justify-between print:justify-between medium:justify-around
-          gap-x-4 small:gap-0
-          text-sm
-          items-end medium:items-center print:items-center
-          px-2">
-
-
+  <div
+    class="flex flex-wrap flex-row small:flex-col medium:flex-row print:flex-row justify-center small:justify-between print:justify-between medium:justify-around gap-x-4 small:gap-0 text-sm items-end medium:items-center print:items-center px-2"
+  >
     <HeaderLink :icon="emailIcon" :url="emailUrl" :display="emailDisplay" />
-
 
     <HeaderLink v-if="phone" :icon="phone.icon" :display="phone.phone" />
 
@@ -17,10 +10,12 @@
 
     <HeaderLink :icon="locationIcon" :display="location" />
 
-    <span v-for="{ profileUsername, profileUrl, profileIcon } in profiles">
-      <HeaderLink :icon="profileIcon" :display="profileUsername" :url="profileUrl" />
-
-    </span>
+    <HeaderLink
+      v-for="{ profileUsername, profileUrl, profileIcon } in profiles"
+      :icon="profileIcon"
+      :display="profileUsername"
+      :url="profileUrl"
+    />
   </div>
 </template>
 
