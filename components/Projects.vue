@@ -6,6 +6,7 @@
           target="_blank">{{
               project.name
           }}</a>
+        <Icon name="fa6-solid:arrow-up-right-from-square" size="0.7em" class="ml-1" />
       </h4>
       <span class="font-medium text-sm text-right">{{ project.date }}</span>
     </div>
