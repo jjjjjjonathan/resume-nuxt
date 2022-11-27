@@ -2,8 +2,8 @@
   <div class="
       w-full
       flex flex-col medium:flex-row print:flex-row
-      justify-between small:justify-around medium:justify-between print:justify-between
-      items-center small:items-start medium:items-end print:items-end
+      justify-between small:justify-around medium:justify-between print:justify-between print:small:justify-between
+      items-center small:items-start medium:items-end print:items-end print:small:items-end
   ">
 
     <h1 class="order-first">{{ name.toUpperCase() }}</h1>
