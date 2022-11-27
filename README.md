@@ -6,6 +6,8 @@ The data for the resume is importmed from the `resume.json` file in the `utils` 
 
 ## Tech Stack
 
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vue.js](https://vuejs.org/)
 - [Nuxt 3](https://nuxt.com/)
 - [@nuxtjs/tailwindcss](https://tailwindcss.nuxt.dev/)
 - [@nuxt/test-utils-edge](https://nuxt.com/docs/getting-started/testing)
@@ -34,3 +36,6 @@ The data for the resume is importmed from the `resume.json` file in the `utils` 
 - [x] update README
 - [x] responsive design
 - [ ] write script to generate PDF after build step and before deployment
+- [ ] Implement `@nuxt/content` to allow for writing cover letters on your local server while keeping your consistent resume header.
+- [ ] Finish writing tests when Nuxt 3 develops more testing utilities.
+- [ ] Use Nuxt's `layouts` folder to try to include more resume styles for others to use.
