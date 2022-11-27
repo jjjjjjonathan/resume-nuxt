@@ -36,6 +36,6 @@ The data for the resume is importmed from the `resume.json` file in the `utils` 
 - [x] update README
 - [x] responsive design
 - [ ] write script to generate PDF after build step and before deployment
-- [ ] Implement `@nuxt/content` to allow for writing cover letters on your local server while keeping your consistent resume header.
+- [ ] Implement the [`@nuxt/content`](https://content.nuxtjs.org/) to allow for writing and saving cover letters on your local server in the [`content`](https://nuxt.com/docs/guide/directory-structure/content) directory (add the directory to `.nuxtignore` to skip it during the build process).
 - [ ] Finish writing tests when Nuxt 3 develops more testing utilities.
-- [ ] Use Nuxt's `layouts` folder to try to include more resume styles for others to use.
+- [ ] Use Nuxt's [`layouts`](https://nuxt.com/docs/guide/directory-structure/layouts) directory to try to include more resume styles for others to use.
