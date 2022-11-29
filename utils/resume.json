@@ -159,7 +159,7 @@
     },
     {
       "name": "L1O-stats",
-      "description": "Stats tracker and Twitter-graphic generator for League1 Ontario to create graphics that meet WCAG 2 Contrast and Colour accessibility requirements.",
+      "description": "Stats tracker with intuitive UI for League1 Ontario to create social-media graphics that meet WCAG 2 Contrast and Colour accessibility requirements.",
       "highlights": [],
       "keywords": [
         "JavaScript",
