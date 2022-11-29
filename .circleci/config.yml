@@ -1,58 +1,72 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-      - run:
-          name: 'Say hello'
-          command: 'echo Hello, World!'
+orbs:
+  browser-tools: circleci/browser-tools@1.1.0
 
+jobs:
   build:
     docker:
-      - image: cimg/node:16.14.2
+      - image: cimg/node:16.14.2-browsers
 
     working_directory: ~/resume-nuxt
 
     steps:
+      # 1
       - checkout
-      - run: npm install
-      - run: npm test
+      - run:
+          name: Update NPM
+          command: 'sudo npm install -g npm'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      # 2
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      # 3
+      - run:
+          name: Nuxt3 Build
+          command: npm run generate
+      - save_cache:
+          key: nuxt3-public-cache-{{ .Branch }}
+          paths:
+            - ./.output/public
+      # 4
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - run:
+          name: Check Chrome version
+          command: |
+            google-chrome --version
+            chromedriver --version
+      - save_cache:
+          key: nuxt3-public-cache-{{ .Branch }}
+          paths:
+            - ./.output/public
+      # 5
+      - run:
+          name: Insert CSS into HTML
+          command: node ci/cheerio.js
+      - run:
+          name: Save index to PDF
+          command: bash ci/pdf.sh
+      - save_cache:
+          key: nuxt3-public-cache-{{ .Branch }}
+          paths:
+            - ./.output/public
+      # 6
+      - run:
+          name: Deploy to Netlify
+          command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=./.output/public
 
-  deploy:
-    machine:
-      enabled: true
-
-    working_directory: ~/resume-nuxt
-
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - '47:0f:a8:3d:97:80:cf:80:8b:45:37:31:88:d5:50:ff'
-      - checkout
-      - run: git push git@github.com:jjjjjjonathan/resume-nuxt.git main:production
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  test_and_deploy:
+  netlify:
     jobs:
       - build:
           filters:
             branches:
-              ignore: production
-      - deploy:
-          filters:
-            branches:
-              ignore: production
-          requires:
-            - build
+              only:
+                - main
