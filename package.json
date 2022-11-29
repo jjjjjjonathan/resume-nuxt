@@ -23,6 +23,7 @@
     "@vueuse/head": "v1.0.0-rc.14"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "moment": "^2.29.4"
   }
 }
