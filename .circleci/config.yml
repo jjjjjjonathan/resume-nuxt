@@ -49,7 +49,7 @@ jobs:
       # 5
       - run:
           name: Insert CSS into HTML
-          command: node ci/cheerio.js
+          command: node ci/insertStyles.js
       - run:
           name: Save index to PDF
           command: bash ci/pdf.sh
